@@ -100,15 +100,73 @@ body {
     margin: 0;
     height: 0;
     overflow: hidden;
-    transition: height 0.5s ease-in-out;
 }
 
 .answer.active {
     margin-top: 1.5rem;
-    height: 100px ;
+    height: 100px;
     transition: height 0.5s ease-in-out;
 }
 
 .attribution {
     margin: 2rem;
+}
+
+@media (540 <= width <= 1024) {
+    body {
+        background-image: url(../assets/images/background-pattern-mobile.svg);
+        background-size: contain;
+    }
+    
+    #faq-card {
+        min-width: 340px;
+        padding: 1.7rem;
+        margin: 0.5rem;
+    }
+
+    #title h1 {
+        font-size: 2rem;
+    }
+
+    #title img {
+        width: 25px;
+    }
+
+    .answer {
+        font-size: 0.9rem;
+    }
+
+    .answer.active {
+        height: 150px;
+    }
+}
+
+@media (width <= 540px) {
+
+    body {
+        background-image: url(../assets/images/background-pattern-mobile.svg);
+        background-size: contain;
+    }
+    
+    #faq-card {
+        width: 340px;
+        padding: 1.7rem;
+        margin: 0.5rem;
+    }
+
+    #title h1 {
+        font-size: 2rem;
+    }
+
+    #title img {
+        width: 25px;
+    }
+
+    .answer {
+        font-size: 0.9rem;
+    }
+
+    .answer.active {
+        height: 150px;
+    }
 }
