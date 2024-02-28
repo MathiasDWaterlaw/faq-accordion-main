@@ -33,7 +33,6 @@ body {
 
 .hidden {
     display: none;
-    transition: max-height 0.5s ease-in-out;
 }
 
 .bold {
@@ -83,18 +82,31 @@ body {
     margin-bottom: 0;
 }
 
+.plus-minus:hover {
+    cursor: pointer;
+}
+
 .question-title {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.answer {
+.answer{
     font-weight: 400;
     color: var(--Grayish-purple);
     line-height: 1.5rem;
-    margin-top: 1.5rem;
+    transition: 0.5s;
+    margin: 0;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.5s ease-in-out;
+}
 
+.answer.active {
+    margin-top: 1.5rem;
+    height: 100px ;
+    transition: height 0.5s ease-in-out;
 }
 
 .attribution {
