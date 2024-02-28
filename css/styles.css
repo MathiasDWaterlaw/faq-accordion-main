@@ -31,6 +31,10 @@ body {
     overflow: scroll;
 }
 
+hr {
+    opacity: 0.3;
+}
+
 .hidden {
     display: none;
 }
